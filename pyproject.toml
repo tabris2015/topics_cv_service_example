@@ -20,3 +20,11 @@ torchvision = { index = "pytorch" }
 name = "pytorch"
 url = "https://download.pytorch.org/whl/cpu"
 explicit = true
+
+[tool.uv]
+# Development tools used by CI and contributors
+dev-dependencies = [
+    "ruff>=0.6.8",
+    "pytest>=8.3.3",
+    "lark>=1.2.2",
+]
