@@ -24,7 +24,7 @@ jobs:
         run: uv sync --all-extras --dev
 
       - name: Verify installations  # Temporal para debug
-        run: uv run --which ruff
+        run: uv run which ruff
 
       - name: Check format
         run: uv run ruff check .
