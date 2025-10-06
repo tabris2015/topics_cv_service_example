@@ -12,6 +12,12 @@ dependencies = [
     "ultralytics>=8.3.1",
 ]
 
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.6.0",
+]
+
 [tool.uv.sources]
 torch = { index = "pytorch" }
 torchvision = { index = "pytorch" }
